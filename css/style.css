@@ -1,0 +1,350 @@
+:root {
+    --yasil: #54d154;
+    --tundyasil: #3eba3e;
+}
+html { scroll-behavior: smooth }
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background: url('../img/headerbg.jpg') center/cover;
+    padding: 5px 30px
+}
+
+#menu li a {
+    font: normal 1rem "Proxima Nova";
+    color: #fff;
+}
+h1 {
+    font: bold 2rem Montserrat;
+    color: #fff;
+    text-transform: capitalize;
+}
+h2 {
+    font: 1.3rem Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #828181;
+    font-family: "Montserrat";
+    padding: 10px;
+}
+h6 {
+    font: normal 1rem "Myriad Pro";
+    color: #b7b3b3;
+    padding: 10px
+}
+.bgyasil h2 { color: #1f7b1f }
+.bgyasil h6 { color: #2b9b2b }
+hr {
+  width: 43px;
+  height: 2px;
+  background-color: #828181;
+  margin: auto;
+} 
+.bgyasil hr { background-color: #1f7b1f; }
+
+#search { display: flex }
+
+#search * {
+    background: #ffffffcc;
+    height: 27px;
+    padding: 5px 15px;
+    border: none;
+    outline: none ;
+}
+#search input:first-child { border-radius: 15px 0 0 15px; }
+#search input:last-child { 
+    border-radius: 0 15px 15px 0;
+    background: #ffffffcc url('../img/magnifying-glass.svg') center/1rem no-repeat ; 
+}
+
+main > section { 
+    padding: 40px;
+    text-align: center; 
+}
+.arts { padding: 40px 10px }
+.arts article { padding: 20px 0; }
+.icon {
+    display: flex;
+    margin: auto;
+    background-color: #e0f3e0;
+    width: 140px;
+    height: 140px;
+    border-radius: 25px;
+ }
+
+.icon i {
+    margin: auto;
+    color: var(--yasil);
+    font-size: 4.5em;
+}
+
+.btns { 
+    display: flex; 
+    width: 100%; 
+    padding: 50px;
+    justify-content: center; 
+}
+.btns button {
+    height: 33px;
+    border: 1px solid #2b9b2b;
+    background: #fff;
+    font: normal 1rem "Proxima Nova";
+    color: #2b9b2b;
+    padding: 6px 20px;
+}
+.btns button:first-child { border-radius: 18px 0 0 18px; }
+.btns button:last-child { border-radius: 0 18px 18px 0;  }
+
+.btns button:hover, .btns button.active { background: #2b9b2b; color: #fff  }
+
+.bgyasil { background-color: var(--yasil) }
+.bgtundyasil { background-color: var(--tundyasil) }
+.bgboz { background-color: #f1f1f1 }
+
+.imgs  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imgs img {
+    margin: 1rem;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.custombutton {
+    margin: 30px;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: #54d154;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+}
+
+h3 {
+    padding-top: 75px;
+    font: normal 16px "Proxima Nova";
+}
+
+p {
+    padding-top: 20px;
+    font: light 15px "Montserrat";
+}
+
+.leftarrow {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: -5%;
+    top: -2vh;
+    background-image: url("../img/leftarrow.png");
+    background-repeat: no-repeat;
+}
+
+.rightarrow {
+    width: 15px;
+    height: 30px;
+    position: relative;
+    left: 105%;
+    top: -5vh;
+    background-image: url("../img/rightarrow.png");
+    background-repeat: no-repeat;
+}
+
+.herp {
+    position: absolute;
+    left: 32%;
+    padding-top: 2vh;
+}
+
+.container {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.logo {
+    padding: 45px;
+}
+
+.user {
+    margin-top: 40px;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+
+.user p {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    text-align: center;
+}
+
+.contactlogos {
+    width: 84px;
+    height: 22px;
+    border-radius: 14px;
+    background-color: #c5e9c5;
+    margin-left: 28%;
+    margin-top: 20px;
+}
+
+.workwithusbtn {
+    position: relative;
+    left: 30%;
+
+    width: 175px;
+    height: 40px;
+    border-radius: 20px;
+    filter: drop-shadow(-1.545px 4.755px 2.5px rgba(0,0,0,0.1));
+    background-color: #53d153;
+    color: #fff;
+    border: none;
+
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Proxima Nova";
+    text-align: center;
+    margin-top: 25px;
+}
+
+.workwithusbtn:hover {
+    background-color: #53d1539c;
+}
+
+footer {
+    background-color: #333333;
+}
+
+.col {
+    display: inline-block;
+    width: 440px;
+    height: 110px;
+    margin-left: 5%;
+}
+
+.col h2 {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #dddddd;
+    font-weight: 300;
+    font-family: "Montserrat";
+}
+
+.col h6 {
+    margin-left: 15%;
+    width: 310px;
+    font-size: 16px;
+    color: #cccccc;
+    font-family: "Proxima Nova";
+    text-align: center;
+}
+
+.footercontactlogos {
+    width: 84px;
+    border-radius: 14px;
+    margin-top: 10px;
+    margin-left: 40%;
+}
+
+.posts {
+    margin-left: 10%;
+}
+
+.posts img {
+    padding-top: 10px;
+}
+
+.col form {
+    width: 328px;
+    height: 100px;
+    display: block;
+    margin-left: 18%;
+}
+
+input {
+    width: 322px;
+    height: 30px;
+
+    font-size: 16px;
+    color: #777777;
+    font-family: "Proxima Nova";
+    background-color: #444444;
+    border: none;
+    margin-top: 3px;
+}
+
+.sendbtn {
+    width: 322px;
+    height: 30px;
+    background-color: #1f7b1f;
+    border-radius: 4px;
+    border: none;
+    border-top-left-radius: 0;
+    margin-top: 3px;
+}
+
+.footerlogos img {
+    margin-top: 50px;
+    margin-left: 13%;
+}
+
+.madeby {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    nav { 
+        width: 100%;  
+        display: flex;
+        justify-content: space-between; 
+    }
+    #menu { 
+        display: flex;
+        order: -1;
+    }
+    #menu li { 
+        padding: 0 10px;
+    }
+    h1 { font-size: 3.4rem }
+    .arts { display: flex }
+    .arts article { padding: 20px 40px; }
+
+    .imgs { max-width: 1000px; margin: auto }
+    .imgs img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .leftarrow {
+        left: 0%;
+    }
+
+    .rightarrow {
+        left: 100%;
+    }
+
+    .herp { left: 35%}
+    .workwithusbtn { left: 45%}
+}
+
+
+@media only screen and (min-width: 960px) {
+    .herp { left: 38%}
+}
+
+@media only screen and (min-width: 1440px) {
+    .herp { left: 42%}
+}
